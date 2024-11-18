@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (5.10.0)
+  - Apollo (1.15.3):
+    - Apollo/Core (= 1.15.3)
+  - Apollo/Core (1.15.3)
+  - lottie-ios (4.5.0)
+  - SwiftLint (0.57.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Apollo
+  - lottie-ios
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Apollo
+    - lottie-ios
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Alamofire: cd0b98508df05796dd2ff278f3bb055a631b5390
+  Apollo: a1e120e7ca2c8592056bd39e8032e2e3fed601a6
+  lottie-ios: a881093fab623c467d3bce374367755c272bdd59
+  SwiftLint: eb47480d47c982481592c195c221d11013a679cc
+
+PODFILE CHECKSUM: ba29145c0de7d6f0e35a56df3d6b8639da67cc50
+
+COCOAPODS: 1.16.2
