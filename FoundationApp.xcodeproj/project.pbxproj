@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1931A6A9A68A0E58147C6778 /* Pods_FoundationAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDE4E31DF56FEC9A7F4198A /* Pods_FoundationAppTests.framework */; };
-		D4162729416A69F94F682121 /* Pods_FoundationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D68E9E23C19A9D6D6766F6 /* Pods_FoundationApp.framework */; };
+		387BA8982CEBE10800E1E22E /* Pods_FoundationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 387BA8972CEBE10800E1E22E /* Pods_FoundationApp.framework */; };
+		387BA8992CEBE10800E1E22E /* Pods_FoundationApp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 387BA8972CEBE10800E1E22E /* Pods_FoundationApp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FB9098D4B1A19262F1127735 /* Pods_FoundationApp_FoundationAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D33A5CC039CC6718906A5D25 /* Pods_FoundationApp_FoundationAppUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,9 +30,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		387BA89A2CEBE10800E1E22E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				387BA8992CEBE10800E1E22E /* Pods_FoundationApp.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0DEE6D67A65BE75B6B1F4199 /* Pods-FoundationAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoundationAppTests.release.xcconfig"; path = "Target Support Files/Pods-FoundationAppTests/Pods-FoundationAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		2D242B21BCA9A2D246FE01E7 /* Pods-FoundationApp-FoundationAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoundationApp-FoundationAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-FoundationApp-FoundationAppUITests/Pods-FoundationApp-FoundationAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		387BA86C2CEBE03300E1E22E /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		387BA8932CEBE0DF00E1E22E /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		387BA8972CEBE10800E1E22E /* Pods_FoundationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_FoundationApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38BC81BC2CD2CBC50047B1ED /* FoundationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoundationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38BC81CE2CD2CBC80047B1ED /* FoundationAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoundationAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38BC81D82CD2CBC80047B1ED /* FoundationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoundationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,22 +65,16 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		38BC81BE2CD2CBC50047B1ED /* FoundationApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = FoundationApp;
 			sourceTree = "<group>";
 		};
 		38BC81D12CD2CBC80047B1ED /* FoundationAppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = FoundationAppTests;
 			sourceTree = "<group>";
 		};
 		38BC81DB2CD2CBC80047B1ED /* FoundationAppUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = FoundationAppUITests;
 			sourceTree = "<group>";
 		};
@@ -73,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4162729416A69F94F682121 /* Pods_FoundationApp.framework in Frameworks */,
+				387BA8982CEBE10800E1E22E /* Pods_FoundationApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,13 +140,15 @@
 				A5C291928EDCF2799234F9E5 /* Pods-FoundationAppTests.debug.xcconfig */,
 				0DEE6D67A65BE75B6B1F4199 /* Pods-FoundationAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		3FB635F7356739BC88094A98 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				387BA8972CEBE10800E1E22E /* Pods_FoundationApp.framework */,
+				387BA8932CEBE0DF00E1E22E /* Alamofire.framework */,
+				387BA86C2CEBE03300E1E22E /* Alamofire.framework */,
 				61D68E9E23C19A9D6D6766F6 /* Pods_FoundationApp.framework */,
 				D33A5CC039CC6718906A5D25 /* Pods_FoundationApp_FoundationAppUITests.framework */,
 				4BDE4E31DF56FEC9A7F4198A /* Pods_FoundationAppTests.framework */,
@@ -154,6 +168,7 @@
 				38BC81B92CD2CBC50047B1ED /* Frameworks */,
 				38BC81BA2CD2CBC50047B1ED /* Resources */,
 				2A49A77BFE2A009B407CAC40 /* [CP] Embed Pods Frameworks */,
+				387BA89A2CEBE10800E1E22E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -546,11 +561,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FoundationApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 645JDL6UG9;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -564,6 +581,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = daml.FoundationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -576,11 +594,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FoundationApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 645JDL6UG9;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -594,6 +614,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = daml.FoundationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
